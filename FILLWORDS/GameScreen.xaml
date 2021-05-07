@@ -1,0 +1,30 @@
+﻿<Window x:Class="FILLWORDS.GameScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FILLWORDS"
+        mc:Ignorable="d"
+        Title="FILLWORDS" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Canvas Background="#FFF6E9BA">
+        <Border BorderBrush="Black" BorderThickness="2" Height="306" Width="319.2" Canvas.Left="43.2" Canvas.Top="67.2" >
+            <Grid  ShowGridLines="True" Height="306" Width="319.2" Canvas.Left="43.2" Canvas.Top="67.2" >
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Border BorderBrush="Black" BorderThickness="2">
+                    <TextBlock Grid.Row="0" Grid.Column="0"></TextBlock>
+                </Border>
+            </Grid>
+        </Border>
+    </Canvas>
+</Window>
