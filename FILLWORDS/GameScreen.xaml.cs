@@ -33,8 +33,8 @@ namespace FILLWORDS
         {
             for (int i=0;i<rang;i++)
             {
-                Field.ColumnDefinitions.Add(new ColumnDefinition());
-                Field.RowDefinitions.Add(new RowDefinition());
+                Field.ColumnDefinitions.Add(new ColumnDefinition() { Width=GridLength.Auto} );
+                Field.RowDefinitions.Add(new RowDefinition() { Height = GridLength.Auto });
             }
         }
 
@@ -44,12 +44,23 @@ namespace FILLWORDS
                 for (int y=0;y<rang;y++)
                 {
                     Polygon temp = new Polygon();
-                    temp.Fill = Brushes.Yellow;
+                    temp.StrokeThickness = 2;
+                    temp.Stroke = Brushes.Black;
+                    temp.Fill = Brushes.GreenYellow;
+                    temp.Height = 300 / rang;
+                    temp.Width = 300 / rang;
                     Grid.SetRow(temp, y);
                     Grid.SetColumn(temp,x);
                     Cell temp1 = new Cell(x,y,temp);
-                    ArrayOfCells[x, y] = temp1;
+                    Field.Children.Add(temp);
+                    //ArrayOfCells[x, y] = temp1;
                 }
+        }
+
+
+        private void Button_MouseDown_1(object sender, MouseButtonEventArgs e)
+        {
+            Environment.Exit(0);
         }
     }
 

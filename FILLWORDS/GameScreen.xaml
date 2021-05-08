@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="FILLWORDS" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Canvas Background="#FFF6E9BA">
-       
-            <Grid x:Name="Field" ShowGridLines="True" Height="306" Width="319.2" Canvas.Left="43.2" Canvas.Top="67.2" >
-                
-            </Grid>
-        
+
+        <Grid x:Name="Field" ShowGridLines="True" Height="300" Width="300" Canvas.Left="66" Canvas.Top="66" >
+
+        </Grid>
+        <Button MouseDown="Button_MouseDown_1" Canvas.Left="537" Canvas.Top="205">Выход</Button>
     </Canvas>
 </Window>
