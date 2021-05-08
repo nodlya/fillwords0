@@ -7,24 +7,10 @@
         mc:Ignorable="d"
         Title="FILLWORDS" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Canvas Background="#FFF6E9BA">
-        <Border BorderBrush="Black" BorderThickness="2" Height="306" Width="319.2" Canvas.Left="43.2" Canvas.Top="67.2" >
-            <Grid  ShowGridLines="True" Height="306" Width="319.2" Canvas.Left="43.2" Canvas.Top="67.2" >
-                <Grid.RowDefinitions>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
-                </Grid.ColumnDefinitions>
-                <Border BorderBrush="Black" BorderThickness="2">
-                    <TextBlock Grid.Row="0" Grid.Column="0"></TextBlock>
-                </Border>
+       
+            <Grid x:Name="Field" ShowGridLines="True" Height="306" Width="319.2" Canvas.Left="43.2" Canvas.Top="67.2" >
+                
             </Grid>
-        </Border>
+        
     </Canvas>
 </Window>
